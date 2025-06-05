@@ -1,0 +1,11 @@
+.nav-item {
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #a46b00;
+  font-family: "Muller Regular", serif;
+  cursor: pointer;
+
+  &:hover {
+    color: #624309;
+  }
+}
