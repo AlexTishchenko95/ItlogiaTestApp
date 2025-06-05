@@ -1,0 +1,44 @@
+.pizza-container {
+  padding-top: 132px;
+  display: flex;
+  align-items: center;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 45px;
+      line-height: 55px;
+      margin: 0;
+      font-weight: 800;
+      font-family: "Muller Extra Bold", serif;
+    }
+
+    &__top {
+      color: #b99150;
+    }
+
+    &__bottom {
+      color: #ffc468;
+    }
+  }
+
+  .advantages {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+
+    .item {
+      flex: 0 0 calc(50% - 8px);
+    }
+
+    @media (max-width: 600px) {
+      .item {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
