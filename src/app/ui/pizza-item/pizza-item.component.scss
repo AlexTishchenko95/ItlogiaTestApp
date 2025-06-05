@@ -1,0 +1,36 @@
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 282px;
+  filter: drop-shadow(0px 3px 7.5px rgba(152,152,152,0.2));
+  background-color: #ffffff;
+
+  .title {
+    font-size: 18px;
+    line-height: 55px;
+    color: #382400;
+    font-weight: bold;
+    font-family: "Muller Bold", serif;
+    text-align: center;
+  }
+
+  .ingredients {
+    padding-top: 13px;
+    width: 242px;
+    height: 51px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #181a1a;
+    font-family: "Muller Regular", serif;
+    text-align: center;
+  }
+
+  .choose-button {
+    margin: 15px 0;
+  }
+
+  .pizza-img {
+    margin-top: 27px;
+  }
+}

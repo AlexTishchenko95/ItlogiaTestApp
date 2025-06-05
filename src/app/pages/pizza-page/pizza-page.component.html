@@ -1,19 +1,17 @@
-<div class="pizza-container">
+<div class="pizza-preview-container">
  <div>
     <div class="title">
       <h1 class="title__top">Самая вкусная пицца в мире</h1>
       <h1 class="title__bottom">только в Pizza Cheff</h1>
     </div>
-
     <div class="advantages">
       @for(advantage of ADVANTAGES; track advantage.icon) {
         <itl-advantage class="item" [icon]="advantage.icon" [title]="advantage.title" [bodyText]="advantage.body" />
       }
     </div>
-
-   <itl-button text="Выбрать пиццу" />
+   <itl-button class="choose-pizza-btn" buttonText="Выбрать пиццу" />
  </div>
-
   <img ngSrc="./assets/img/pizza_big.png" height="342" width="520" alt="pizza_big">
-
 </div>
+
+<itl-pizza-choose />

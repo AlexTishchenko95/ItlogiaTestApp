@@ -7,5 +7,5 @@ import {Component, input, InputSignal} from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  public readonly text: InputSignal<string> = input.required();
+  public readonly buttonText: InputSignal<string> = input.required();
 }

@@ -11,6 +11,7 @@ import { NgOptimizedImage } from '@angular/common';
 export class IconComponent {
   public readonly iconPath: InputSignal<string> = input.required();
 
-  public readonly size: InputSignal<number> = input(24);
+  public readonly height: InputSignal<number> = input(24);
+  public readonly width: InputSignal<number> = input(24);
   public readonly alt: InputSignal<string> = input('icon-alt');
 }

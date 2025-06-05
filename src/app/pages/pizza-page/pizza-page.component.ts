@@ -4,13 +4,15 @@ import { ADVANTAGES } from '../../constants/advantages.const';
 import { AdvantageComponent } from '../../ui/advantage/advantage.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ButtonComponent } from '../../ui/button/button.component';
+import { PizzaChooseComponent } from '../pizza-choose/pizza-choose.component';
 
 @Component({
   selector: 'itl-pizza-page',
   imports: [
     AdvantageComponent,
     NgOptimizedImage,
-    ButtonComponent
+    ButtonComponent,
+    PizzaChooseComponent
   ],
   templateUrl: './pizza-page.component.html',
   styleUrl: './pizza-page.component.scss'
