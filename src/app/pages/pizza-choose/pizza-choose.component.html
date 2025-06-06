@@ -1,9 +1,0 @@
-<h3 class="choose-title">Выберите свою любимую пиццу</h3>
-
-@let pizzas = pizzas$ | async;
-
-<div class="pizzas-container">
-  @for (pizza of pizzas; track pizza.id) {
-    <itl-pizza-item [pizza]="pizza"/>
-  }
-</div>
