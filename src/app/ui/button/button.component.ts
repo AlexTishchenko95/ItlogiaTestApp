@@ -1,4 +1,4 @@
-import {Component, input, InputSignal} from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 
 @Component({
   selector: 'itl-button',
@@ -8,4 +8,6 @@ import {Component, input, InputSignal} from '@angular/core';
 })
 export class ButtonComponent {
   public readonly buttonText: InputSignal<string> = input.required();
+  public readonly width: InputSignal<number> = input(224);
+  public readonly disabled: InputSignal<boolean> = input(false);
 }

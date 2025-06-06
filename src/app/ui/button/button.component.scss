@@ -1,7 +1,6 @@
 .button {
   cursor: pointer;
 
-  width: 224px;
   height: 60px;
   background-color: #ffaf18;
   border: none;
@@ -13,5 +12,14 @@
 
   &:hover {
     background-color: #e0960c;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: #9f9c9c;
+
+  &:hover {
+    background-color: #9f9c9c;
   }
 }

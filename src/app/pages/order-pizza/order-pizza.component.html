@@ -1,0 +1,36 @@
+<div class="order-container">
+  <div class="text">
+    <div class="title">
+      <h1 class="title__top">Хватит думать!</h1>
+      <h1 class="title__bottom">Доставим заказ за 30 минут!</h1>
+    </div>
+
+    <span class="info-container">
+      Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту -
+      вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы на клиент был доволен и не остался голодный!
+    </span>
+  </div>
+
+  <div class="form" [formGroup]="orderForm">
+    <input
+      itlInput
+      [pattern]="noDotsPattern"
+      (input)="preventDotInput($event)"
+      formControlName="name"
+      type="text"
+      placeholder="Ваше имя"
+    >
+    <input itlInput formControlName="address" placeholder="Адрес доставки">
+    <input itlInput formControlName="phoneNumber" placeholder="Телефон">
+    <itl-button
+      [disabled]="orderForm.invalid"
+      [width]="330"
+      buttonText="Оформить заказ"
+      (click)="onClickAcceptOrder()"
+    />
+  </div>
+
+  <itl-icon class="icon" iconPath="/assets/img/pizza_piece.png" [width]="410" [height]="454"/>
+</div>
+
+<ng-toast [position]="TOAST_POSITIONS.BOTTOM_CENTER" [width]="350" />

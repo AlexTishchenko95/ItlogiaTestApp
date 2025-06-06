@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Pizza } from '../interfaces/pizza.interface';
-import { Observable, of } from 'rxjs';
+import {delay, Observable, of} from 'rxjs';
+import { Order } from '../interfaces/order.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -57,5 +58,9 @@ export class PizzaService {
         image: '/assets/img/pizzas/pizza_8.png',
       }
     ]);
+  }
+
+  public sendOrder(order: Order): Observable<Order> {
+    return of(order).pipe(delay(2000));
   }
 }
